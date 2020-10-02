@@ -1,0 +1,77 @@
+body{
+    background: rgba(210,255,82,1);
+    background: -moz-linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+    background: -webkit-linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+}
+.loading {
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  .loading-bar {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+  }
+  .loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+  }
+  .loading-bar:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+  }
+  .loading-bar:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+  }
+  .loading-bar:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+  }
+  .logo{
+      margin-top: 200px !important;
+      margin: 50px;
+      width: 100px;
+  }
+  @keyframes loading {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1, 2.2);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+
+  .btn-go-home{
+    position: relative;
+    z-index: 200;
+    margin: 15px auto;
+    width: 100px;
+    padding: 10px 15px;
+    border: 1px solid #FFCB39;
+    border-radius: 100px;
+    font-weight: 400;
+    display: block;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing : 2px;
+    font-size: 11px;
+    
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
