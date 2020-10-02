@@ -480,9 +480,10 @@ class Checkout extends MY_Controller
                 {
                     $pines[$i]  = $this->activar->getPin($cursos[$i],$id_company)->code;
                 }
-//                $envio_correo = $this->emails->active_student($cursos, $pines, $correo, $company, $nombre, $apellido, $nombreCursos);
+                $envio_correo = $this->emails->active_student($cursos, $pines, $correo, $company, $nombre, $apellido, $nombreCursos);
 
-                $envio_correo = $this->emailss->active_student($cursos, $pines, $correo, $company, $nombre, $apellido, $nombreCursos);
+                #--- pruebas envio por sendinblue
+                //$envio_correo = $this->emailss->active_student($cursos, $pines, $correo, $company, $nombre, $apellido, $nombreCursos);
 
                 //$envio_correo = $this->emails->test_email($email, $state, $orderId);
                 if ($envio_correo) 
